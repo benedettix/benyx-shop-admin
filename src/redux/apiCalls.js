@@ -38,7 +38,7 @@ export const login = async (dispatch, user, password, username, history) => {
       };
       throw obj;
     }
-    history.push("/");
+    history.push("/home");
     dispatch(loginSuccess(user[0]));
   } catch (err) {
     dispatch(loginFailure(err.err));
